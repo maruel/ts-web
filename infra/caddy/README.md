@@ -14,7 +14,7 @@ This is the reverse proxy. It handles HTTPS termination using LetsEncrypt TLS ce
 - New GitHub App
     - Name: caddy server node update
     - Homepage: `https://example.com`
-    - Callback URL: `https://<your_domain>/webhook/github`
+    - Callback URL: `https://example.com/webhook/github`
     - Permissions:
         - Actions: Read-only
         - Contents: Read-only
