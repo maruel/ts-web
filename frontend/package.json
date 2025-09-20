@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prebuild": "tsx scripts/precompress.ts",
+    "postbuild": "tsx scripts/postcompress.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "vite": "^7.1.6",
+    "yauzl": "^3.2.0"
+  },
+  "dependencies": {
+    "shared": "file:../shared",
+    "zod": "^4.1.10"
+  }
+}

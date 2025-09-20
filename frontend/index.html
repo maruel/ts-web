@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio File Upload</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" type="image/avif" href="/assets/icon.avif">
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <!-- Top navigation bar -->
+    <nav class="top-nav">
+      <div class="nav-left">
+        <img src="/assets/logo.avif" alt="Logo" id="logo" class="nav-logo">
+      </div>
+      <div class="nav-right">
+        <div id="user-info" class="user-info">
+          <span id="user-name" class="user-name"></span>
+          <img src="/assets/icon.avif" alt="User" id="user-icon" class="user-icon" style="display: none;">
+        </div>
+        <button id="login-button" class="nav-button">Login</button>
+        <button id="logout-button" class="nav-button" style="display: none;">Logout</button>
+      </div>
+    </nav>
+    <div class="upload-container">
+      <h1>Click the button</h1>
+      <div>
+        <button id="testDbButton" class="test-db-button">Test Database</button>
+      </div>
+    </div>
+    <div id="result" style="padding:1rem; max-width:800px; white-space:pre-wrap;"></div>
+    <div id="spinner" class="spinner-overlay" aria-hidden="true">
+      <div class="spinner" role="status" aria-label="Uploading"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "cd shared && npm i && npm run build && cd ../frontend && npm i && npm run build && cd ../backend && npm i && npm run build",
+    "start": "cd backend && node dist/index.js",
+    "lint": "eslint .",
+    "test": "cd backend && npm i && npm run test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "typescript-eslint": "^8.44.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6"
+  }
+}
