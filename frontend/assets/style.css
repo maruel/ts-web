@@ -1,0 +1,201 @@
+body {
+	font-family: Arial, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f5f5f5;
+}
+
+/* Top navigation bar */
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 10px 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.nav-left {
+	display: flex;
+	align-items: center;
+}
+
+.nav-logo {
+	height: 40px;
+	width: auto;
+}
+
+.nav-right {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.user-name {
+	font-weight: bold;
+	color: #333;
+}
+
+.user-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.nav-button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+	background-color: #45a049;
+	transform: translateY(-2px);
+}
+
+.nav-button:active {
+	transform: translateY(0);
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+button:hover {
+	background-color: #45a049;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+button:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 15px;
+	overflow-x: auto;
+	margin-top: 20px;
+	white-space: pre-wrap;
+}
+
+/* Small inline spinner and overlay */
+.spinner-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 9999;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 150ms ease;
+}
+
+.spinner-overlay.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.spinner {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.9);
+	border-top-color: rgba(0, 0, 0, 0.2);
+	animation: spin 800ms linear infinite;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* User icon styling */
+#user-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 10px;
+	object-fit: cover;
+}
+
+/* Test DB button styling */
+.test-db-button {
+	margin-top: 10px;
+	padding: 8px 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.test-db-button:hover {
+	background-color: #45a049;
+}
+
+.test-db-button:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+	color: #d32f2f;
+	background-color: #ffebee;
+	border: 1px solid #ffcdd2;
+	border-radius: 4px;
+	padding: 12px;
+	margin: 10px 0;
+}
+
+/* Success message styling */
+.success-message {
+	color: #388e3c;
+	background-color: #e8f5e9;
+	border: 1px solid #c8e6c9;
+	border-radius: 4px;
+	padding: 12px;
+	margin: 10px 0;
+}
