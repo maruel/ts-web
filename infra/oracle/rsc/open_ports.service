@@ -1,0 +1,11 @@
+[Unit]
+Description=Restore iptables rules from a script
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bin/open_ports.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
